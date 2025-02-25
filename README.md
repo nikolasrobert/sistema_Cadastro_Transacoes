@@ -14,6 +14,13 @@ Este projeto é um sistema simples de controle de gastos, onde é possível cada
 - **Parcel:** Bundler para compilar e servir o projeto.
 - **HTML/CSS:** Para a construção da interface do usuário.
 
+## Estrutura de Pastas
+### src/: Contém os arquivos TypeScript (lógica do sistema).
+### dist/: Contém os arquivos compilados em JavaScript.
+### index.html: Arquivo HTML principal.
+### styles.css: Arquivo de estilos da interface.
+
+
 ## Como Rodar o Projeto
 
 ### 1. Pré-requisitos
@@ -38,8 +45,4 @@ Após a compilação, inicie o servidor de desenvolvimento com o seguinte comand
 Isso abrirá o projeto em um servidor local, onde você poderá visualizar a aplicação no seu navegador.
 
 
-## Estrutura de Pastas
-### src/: Contém os arquivos TypeScript (lógica do sistema).
-### dist/: Contém os arquivos compilados em JavaScript.
-### index.html: Arquivo HTML principal.
-### styles.css: Arquivo de estilos da interface.
+
