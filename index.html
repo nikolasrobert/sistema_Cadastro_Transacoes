@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./styles.css">  <!-- importa o arquivo de estilos CSS -->
+  <title>Sistema de Controle de Gastos</title>
+</head>
+<body>
+  <h1>Sistema de Controle de Gastos</h1>
+  
+  <!-- area de cadastro de pessoas -->
+  <section id="cadastroPessoa">
+    <h2>Cadastro de Pessoa</h2>
+    <form id="formPessoa">
+      <label for="nomePessoa">Nome:</label>
+      <input type="text" id="nomePessoa" required>   <!-- campo para o nome da pessoa -->
+      <br>
+      <label for="idadePessoa">Idade:</label>
+      <input type="number" id="idadePessoa" required>    <!-- campo para a idade -->
+      <br>
+      <button type="submit">Cadastrar Pessoa</button>    <!-- botão para enviar o formulário -->
+    </form>
+  </section>
+  
+  <!-- area de cadastro de transações -->
+  <section id="cadastroTransacao">
+    <h2>Cadastro de Transação</h2>
+    <form id="formTransacao">
+      <label for="descricaoTransacao">Descrição:</label>
+      <input type="text" id="descricaoTransacao" required>     <!-- campo para a descrição da transação -->
+      <br>
+      <label for="valorTransacao">Valor:</label>
+      <input type="number" id="valorTransacao" step="0.01" required>    <!-- campo para o valor da transação -->
+      <br>
+      <label for="tipoTransacao">Tipo:</label>
+      <select id="tipoTransacao" required>     <!-- seleção entre receita ou despesa -->
+        <option value="receita">Receita</option>
+        <option value="despesa">Despesa</option>
+      </select>
+      <br>
+      <label for="pessoaTransacao">ID da Pessoa:</label>
+      <input type="number" id="pessoaTransacao" required>      <!-- campo para o ID da pessoa -->
+      <br>
+      <button type="submit">Cadastrar Transação</button>    <!-- botão para registrar a transação -->
+    </form>
+  </section>
+  
+  <!-- area para consultar os totais -->
+  <section id="consultaTotais">
+    <h2>Consultar Totais</h2>
+
+    <!-- tabela que exibe o saldo de cada pessoa -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Receitas</th>
+                <th>Despesas</th>
+                <th>Saldo</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-totais">
+        </tbody>
+    </table>
+    <button onclick="consultarTotais()">Consultar Totais</button>    <!-- botão que chama a função para consultar os totais -->
+    
+  </section>
+  
+   <!-- importa o arquivo JavaScript compilado  -->
+   <script type="module" src="./dist/index.js"></script>
+
+
+</body>
+</html>

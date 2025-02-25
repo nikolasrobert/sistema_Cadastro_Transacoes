@@ -1,0 +1,120 @@
+/* reset para evitar erros */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* fundo com gradiente */
+  body {
+    background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* título principal */
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* layout das seções */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+  }
+  
+  /* estilização dos painéis de cada seção */
+  section {
+    background: rgba(50, 50, 50, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* formatação do título das seções */
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #f1f1f1;
+  }
+  
+  /* layout formulários */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* campos de input */
+  input, select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+  }
+  
+  /* placeholder nos inputs */
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  /* botão */
+  button {
+    background: #6200ea;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  /*espaço no ultimo botão pois achei mais bonito assim*/
+  button:last-of-type {
+    margin-top: 20px; 
+  }
+
+  
+  /* estilização da tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  /* cabeçalho da tabela */
+  th {
+    background: #6200ea;
+    color: white;
+    padding: 12px;
+  }
+  
+  /* células da tabela */
+  td {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  
+  
